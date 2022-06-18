@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pop;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: pop bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+@media screen and (max-width: 1440px) {
+    body{
+        font-family: pop;
+        font-weight: 600px;
+        padding: 0;
+        margin: 0;
+    }
+    main{
+        padding: 0;
+        margin: 0;
+        
+        
+    }
+    .hero{
+        padding: 3rem;
+        padding-top: 0;
+        margin: 0;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        background-color: hsl(193, 100%, 96%);
+        background-image: url(images/bg-hero-desktop.svg);
+    }
+    .hero-nav{
+        background-color: hsl(193, 100%, 96%);
+        display: inline-flex;
+        width: 100%;
+        height: 30px;
+        position: relative;
+        padding-bottom: 0px;
+        
+        margin: 0;
+        padding-top: 20px;
+    }
+    .hero-top{
+        background-color: hsl(193, 100%, 96%);
+        padding-bottom: 20px;
+    }
+    .logo{
+        width: 15%;
+        height: 30px;
+        margin: 0rem 0 0 3rem;
+    }
+
+    .hero-img{
+        position: relative;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-left: auto;
+        padding-left: 5%;
+    }
+    .img-screen{
+        width: 35rem;
+        height: 80%;
+        left: 25px;
+        
+    }
+    .hero-nav button{
+        cursor: pointer;
+        width: 190px;
+        margin-top: 0;
+        margin-left: 55rem;
+        margin-bottom: 0;
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        font-family: pop bold;
+        box-shadow: 1px 1px 5px 1px rgba(116, 113, 113, .225);
+        
+
+    }
+
+    .hero-info{
+        
+       padding: 3rem 3rem 1rem 0rem;
+       width: 50%;
+    }
+    .hero-info img{
+        padding-bottom: 0rem;
+        margin-top: -100rem;
+        padding-top: -100rem;
+        width: 150px;
+    }
+    .hero-info h2{
+        margin-top: 4rem;
+        text-transform: capitalize;
+        font-size: 40px;
+        margin-bottom: 2rem;
+        
+        
+    }
+    .hero-info button{
+        background-color: hsl(322, 100%, 66%);
+        width: 200px;
+        border: none;
+        margin: 15px;
+        padding: 12.5px;
+        text-transform: capitalize;
+        color: hsl(210, 17%, 98%);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .ex-info{
+        padding: 5rem;
+    }
+    .st, .nd, .rd {
+        border: 2px solid rgba(155, 153, 153, .185);
+        padding: 3rem;
+        margin: 30px;
+        border-radius: 20px;
+        
+
+    }
+    .st{
+        display: flex;
+        flex-direction: row;
+    }
+    .st img{
+        width: 40%;
+    }
+    .nd{
+        display: flex;
+        flex-direction: row;
+    }
+    .nd img{
+        width: 40%;
+    }
+    .rd{
+        display: flex;
+        flex-direction: row;
+    }
+    .rd img{
+        width: 40%;
+    }
+    .ex-info h4{
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    .words{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .words p{
+        color: hsl(208, 11%, 55%);
+    }
+    footer{
+        position: absolute;
+        background-color: hsl(192, 100%, 9%);
+        display: flex;
+        padding: 10rem 3rem 3rem 3rem;
+
+    }
+    .contact{
+        width: 35%;
+    }
+    .contact li{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+        margin: 15px;
+    }
+    .loca{
+        height: 20px;
+    }
+    .contact p{
+        color: white;
+        font-size: 13px;
+    }
+    .links {
+        display:flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        width: 30%;
+
+
+
+    }
+    .links ul{
+        margin: 0;
+        width: 200px;
+    }
+    .links li{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+        margin: 10px;
+        
+    }
+    .links li a{
+         color: white;
+         text-decoration: none;
+         text-transform: capitalize;
+    }
+    .social-icons{
+        width: 15%;
+        display: flex;
+        margin: 0 0 0 4rem;
+    }
+    .social-icons img{
+        margin: 17px;
+        width: 90px;
+    }
+    .cr{
+        margin-top: 13rem;
+        color: white;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: -100px;
+        left: 32.5%;
+        right: auto;
+        align-items: center;
+        background-color: white;
+        width: 550px;
+        z-index: 1;
+        height: 200px;
+        padding: 5rem;
+        justify-content: center;
+        box-shadow: 1px 1px 5px 1px rgba(116, 113, 113, .225);
+        border-radius: 15px;
+    }
+    .card h3{
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    .card button{
+        margin-top: 25px;
+        width: 80%;
+        padding: 12.5px;
+        background-color: hsl(322, 100%, 66%);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        text-transform: capitalize;
+        font-family: pop;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 1px rgba(116, 113, 113, .225);
+        
+    }
+   
+    
+
+}
+
+@media screen and (max-width: 375px) {
+    .hero{
+        background-image: url(images/bg-hero-mobile.svg);
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        height: 800px;
+    }
+
+    .hero-nav{
+        margin: 0;
+        padding: 2.5rem 0 0 0;
+    }
+    .hero-nav button{
+        margin-left: 4rem;
+        width: 120px; 
+        height: 30px;
+    }
+    .hero-nav img{
+        width: 150px;
+        height: 30px;
+        margin-left: 1rem;
+
+    }
+    .hero-info{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 25px;
+    }
+
+    .hero-info h2{
+          font-size: 20px;
+          text-align: center;
+          width: 100%;
+          height: 50px;
+    }
+    .hero-info p{
+        text-align: center;
+    }
+    .hero-info button{
+        position: relative;
+        top: 50px;
+        padding: 17px;
+        border-radius: 25px;
+    }
+    .hero-img{
+        padding: 0;
+        margin: 0;
+    }
+    .hero-img img{
+        width: 85%;
+        margin: 0;
+        padding: 0;
+    }
+    .ex-info{
+        padding: 1rem;
+    }
+    .st, .nd, .rd{
+        box-shadow: 1px 1px 5px 1px rgba(116, 113, 113, .225);
+        flex-direction: column;
+    }
+    .st, .rd{
+        flex-direction: column-reverse;
+    }
+    .ex-info h4{
+        font-size: 13px;
+        text-align: center;
+    }
+    .ex-info img{
+        width: 100%;
+    }
+    .ex-info p{
+        text-align: center;
+        height: 70px;
+        font-size: 10px;
+    }
+    .card{
+        width: 250px;
+        left: 12%;
+
+    }
+    .card h3{
+        font-size: 13px;
+        font-family: pop bold;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 300px;
+    }
+    .card button{
+        width: 200px;
+    }
+    
+    footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .ph, .mail{
+        height: 15px;
+    }
+    .cr{
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .links{
+        width: 100%;
+    }
+
+
+    
+}
